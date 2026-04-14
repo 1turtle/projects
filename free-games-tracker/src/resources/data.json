@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Alan Wake 2",
+        "id": "alan-wake-2",
+        "img": "https://gmedia.playstation.com/is/image/SIEPDC/alan_wake_2_06072023_08-ps5-en-07jun23?$1600px$",
+        "link": "https://www.playstation.com/en-us/games/alan-wake-2/",
+        "market": "playstation"
+    },
+    {
+        "title": "Goat Simulator 3",
+        "id": "goat-simulator-3",
+        "img": "https://gmedia.playstation.com/is/image/SIEPDC/Goat-Simulator-3-Screenshot-01-27jun22?$1600px$",
+        "link": "https://www.playstation.com/en-us/games/goat-simulator-3/",
+        "market": "playstation"
+    },
+    {
+        "title": "Cocoon",
+        "id": "cocoon",
+        "img": "https://gmedia.playstation.com/is/image/SIEPDC/cocoon-store-art-en-19sep25?$1600px$",
+        "link": "https://www.playstation.com/en-us/games/cocoon/",
+        "market": "playstation"
+    },
+    {
+        "title": "Fear the Spotlight",
+        "id": "1959390",
+        "img": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1959390/f7f87dec1ddd48c32b2e124e050ff57a456267e2/capsule_231x87.jpg?t=1751952809",
+        "link": "https://www.cheapshark.com/redirect?dealID=J7hqcd54JMXUnm1oO%2Fql1NM4E%2F3KK51HzMDJEn9eD%2F8%3D",
+        "market": "epic_games"
+    }
+]

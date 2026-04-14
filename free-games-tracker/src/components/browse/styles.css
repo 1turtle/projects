@@ -1,0 +1,80 @@
+#free-games {
+    margin: auto;
+    padding: 0.75rem;
+    max-width: 64rem;
+
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+
+.market {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    /*margin-top: 1rem;*/
+}
+
+
+.market-name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+.games {
+    /*align-self: flex-start;*/
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: scroll;
+    padding-bottom: 0.50rem;
+
+}
+
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.25rem solid;
+    border-radius: 1rem;
+    border-color: #ABA8A6;
+    text-decoration: none;
+    color: #ABA8A6;
+}
+
+
+.game:hover {
+    border-color: #3373C4;
+}
+
+
+.game-img {
+    min-width: 20rem;
+    max-height: 10rem;
+    border-radius: 0.75rem;
+    align-self: stretch;
+}
+
+
+.game-title-text {
+    max-width: 20rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+@media (min-width: 1024px) {
+    .games {
+        overflow-x: hidden;
+        flex-wrap: wrap;
+    }
+}

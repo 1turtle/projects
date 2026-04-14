@@ -1,0 +1,38 @@
+name: run main.py
+
+on:
+  push:
+  schedule:
+    - cron: '0 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: initialize actions
+        uses: actions/checkout@v4
+
+      - name: install python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.X'
+         
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          
+      - name: load python script
+        run: python main.py
+          
+      - name: update files
+        run: |
+          git config --local user.email "95945513+1turtle@users.noreply.github.com"
+          git config --local user.name "1turtle"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "[WEATHER_BOT]: checking nyc for rain" --allow-empty)
+          git push

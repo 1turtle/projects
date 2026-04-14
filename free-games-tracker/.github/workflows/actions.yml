@@ -1,0 +1,39 @@
+name: run scrape.py
+
+on:
+  push:
+  schedule:
+    - cron: '0 17 * 1-11 4'
+    - cron: '0 17 * 12 *'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: connect actions to your repository
+        uses: actions/checkout@v4
+
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12.3'
+         
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          
+      - name: execute py script
+        run: python scrape.py
+          
+      - name: update files
+        run: |
+          git config --local user.email "95945513+1turtle@users.noreply.github.com"
+          git config --local user.name "1turtle"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "New free games are now available on select markets!" --allow-empty)
+          git push
