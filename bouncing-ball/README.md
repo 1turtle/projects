@@ -8,7 +8,6 @@ This is a simple bouncing ball simulation built in pygame.
 
 ## Contents
 This section goes over the contents in this directory.
-- ```venv```: virtual environment
 - ```requirements.txt```: package list
 - ```circle.py```: broken file, ignore
 - ```main.py```: contains code for the bouncing ball simulation
@@ -22,6 +21,7 @@ In this section, we are assuming that the user has some knowledge of Python and 
 
 ## Notes
 - This program runs at 60 fps, however the gif shown above is recorded at 24 fps (Windows Snippet Tool).
+- The virtual environment is not included in this repository.
 
 ## Tools
 This section goes over the tool(s) used to make this program.
@@ -32,3 +32,6 @@ This section goes over the tool(s) used to make this program.
 This section goes over the external information used to make this program.
 
 - [Pygame](https://www.pygame.org/docs/)
+
+## Contribution
+- Established on April 2026
